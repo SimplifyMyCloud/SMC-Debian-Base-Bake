@@ -15,7 +15,7 @@ source "googlecompute" "debian-base" {
 build {
   sources = ["sources.googlecompute.debian-base"]
   provisioner "shell" {
-    scripts = [
+    inline = [
       "sudo apt-get update -y",
       "sudo apt-get install unzip -y",
       "sudo apt-get install wget -y",
