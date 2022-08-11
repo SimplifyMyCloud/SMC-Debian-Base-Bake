@@ -7,8 +7,8 @@ source "googlecompute" "debian-base" {
   use_os_login            = true
   zone                    = "us-west1-c"
   subnetwork              = "smc-dev-subnet-01"
-  image_name              = "debian-base-1.0"
-  image_description       = "Debian 11 golden image"
+  image_name              = "debian-base"
+  image_description       = "Debian 11 golden image v.1.0"
   image_storage_locations = ["us-west1"]
 }
 
